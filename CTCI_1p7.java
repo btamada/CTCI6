@@ -1,12 +1,12 @@
 /**
- * Arrays and Strings
- * Problem 1.7
+ *  Arrays and Strings
+ *  Problem 1.7
  *
- * Given an image represented by an NxN matrix, where each pixel in the image
- * is 4 bytes, write a method to rotate the image by 90 degrees.  Can you do this in place?
+ *  Given an image represented by an NxN matrix, where each pixel in the image
+ *  is 4 bytes, write a method to rotate the image by 90 degrees.  Can you do this in place?
  *
- * Algorithm Design
- * (1)
+ *  Algorithm Design
+ *
  *
  *
  */
@@ -21,6 +21,8 @@ public class CTCI_1p7 {
                 {21,22,23,24,25}
         };
 
+        rotateMatrix(matrix);
+
         for(int[] row : matrix) {
             for(int i : row) {
                 System.out.print(i + " ");
@@ -32,7 +34,10 @@ public class CTCI_1p7 {
     }
 
     static void rotateMatrix(int[][] matrix) {
-        
+        if(matrix == null || matrix.length == 0) return;
+        for(int i = 0; i < matrix.length / 2; ++i) {
+
+        }
     }
 
 }
