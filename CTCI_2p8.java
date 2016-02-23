@@ -35,7 +35,7 @@ public class CTCI_2p8 {
      * keep a reference to a node that jumps 2 nodes
      * iterate through the list until the slow node meet the fast node
      * return either of the nodes as they should meet at the beginning of the loop
-     * 
+     *
      */
     static Node circList(Node head) {
         if(head == null || head.next == null) return head;
